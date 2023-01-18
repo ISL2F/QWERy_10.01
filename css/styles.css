@@ -929,12 +929,20 @@ main {
   z-index: 3;
   top: 50%;
   left: 49px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.become-member__swipe-right:hover,
+.become-member__swipe-left:hover {
+  transform: scale(2);
 }
 .become-member__swipe-right {
   position: absolute;
   z-index: 3;
   top: 50%;
   right: 31px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 @media (max-width: 1223.98px) {
@@ -1365,6 +1373,10 @@ main {
   background-color: #ffa343;
   border-radius: 8px;
   padding: 23px 68px;
+  transition: all 0.3s;
+}
+.footer__ready-btn:hover {
+  background-color: #9b6730;
 }
 .footer__body {
   display: flex;
@@ -1408,6 +1420,10 @@ main {
 
   height: 69.14px;
   background-color: #ffa343;
+  transition: all 0.3s;
+}
+.body-footer__submit:hover {
+  background-color: #a16f3a;
 }
 
 .body-footer__categories {
@@ -1443,6 +1459,10 @@ main {
   margin-bottom: 45px;
 
   color: #ffffff;
+  transition: all 0.3s;
+}
+.body-footer__link:hover {
+  color: rgb(161, 134, 134);
 }
 .body-footer__about {
   display: flex;

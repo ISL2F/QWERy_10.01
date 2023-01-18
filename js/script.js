@@ -11,7 +11,58 @@ function burgerActive() {
   burger.classList.toggle("active");
   headerMenu.classList.toggle("active");
 }
+/************************************************ */
 
+let infoBtn = document.querySelector("#info");
+
+const infoStart = document.querySelector(".tenggara__content");
+
+infoBtn.addEventListener("click", scrollToInfo);
+
+function scrollToInfo() {
+  let infoCoords = infoStart.getBoundingClientRect().top;
+
+  window.scrollTo({
+    top: infoCoords + window.pageYOffset,
+    left: 0,
+    behavior: "smooth",
+  });
+  event.preventDefault();
+}
+/****************************** */
+let aboutBtn = document.querySelector("#about");
+
+const aboutStart = document.querySelector(".bromo__swiper");
+
+aboutBtn.addEventListener("click", scrollToAbout);
+
+function scrollToAbout() {
+  let aboutCoords = aboutStart.getBoundingClientRect().top;
+
+  window.scrollTo({
+    top: aboutCoords + window.pageYOffset,
+    left: 0,
+    behavior: "smooth",
+  });
+  event.preventDefault();
+}
+/****************************************** */
+let cultureBtn = document.querySelector("#culture");
+
+const cultureStart = document.querySelector(".culture__container");
+
+cultureBtn.addEventListener("click", scrollToCulture);
+
+function scrollToCulture() {
+  let cultureCoords = cultureStart.getBoundingClientRect().top;
+
+  window.scrollTo({
+    top: cultureCoords + window.pageYOffset,
+    left: 0,
+    behavior: "smooth",
+  });
+  event.preventDefault();
+}
 /*******************************************
  * scroll to
  */
